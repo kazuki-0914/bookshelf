@@ -6,23 +6,23 @@
     "books": [
         {
             "title": "本のタイトル",
-            "image": "/image/path"
+            "image": "https://placehold.jp/300x200.png"
         },
         {
             "title": "本のタイトル",
-            "image": "/image/path"
+            "image": "https://placehold.jp/300x200.png"
         },
         {
             "title": "本のタイトル",
-            "image": "/image/path"
+            "image": "https://placehold.jp/300x200.png"
         },
         {
             "title": "本のタイトル",
-            "image": "/image/path"
+            "image": "https://placehold.jp/300x200.png"
         },
         {
             "title": "本のタイトル",
-            "image": "/image/path"
+            "image": "https://placehold.jp/300x200.png"
         }
     ]
 }
