@@ -1,0 +1,21 @@
+{
+    "title": "本のタイトル",
+    "image": "/image/path",
+    "tsgs": [
+        "it",
+        "java"
+    ],
+    "stock": 3,
+    "owners": [
+        {
+            "name": "テスト太郎",
+            "address": "mail@gmail.com",
+            "start_date": "2021/10/31"
+        },
+        {
+            "name": "テスト太郎",
+            "address": "mail@gmail.com",
+            "start_date": "2021/10/31"
+        }
+    ]
+}
