@@ -7,7 +7,7 @@
     </div>
     <div>
       <div class="inline" v-for="book in bookList.books">
-        <div class="inline" @click="move()">
+        <div class="inline">
           <NuxtLink to="/book">
             <v-img :src="book.image" height="200" width="300" />
             <p>{{ book.title }}</p>
@@ -19,11 +19,10 @@
 </template>
 
 <script lang="ts">
-import bookList from "@/assets/books-list.json";
-
-export default {
-  asyncData() {
-    console.log(bookList);
+import Vue from "vue";
+export default Vue.extend({
+  async asyncData({ $axios }) {
+        const bookList = await $axios.$get("/book-list");
     return { bookList };
   },
   methods: {
@@ -34,7 +33,7 @@ export default {
       alert("詳細へ");
     },
   },
-};
+});
 </script>
 
 <style>
