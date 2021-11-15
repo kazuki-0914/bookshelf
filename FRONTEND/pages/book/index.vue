@@ -15,11 +15,10 @@
 </template>
 
 <script lang="ts">
-import bookDetail from "@/assets/books-detail.json";
-
-export default {
-  asyncData() {
-    console.log(bookDetail);
+import Vue from "vue";
+export default Vue.extend({
+  async asyncData({ $axios }) {
+        const bookDetail = await $axios.$get("/book-detail");
     return { bookDetail };
   },
   methods: {
@@ -27,7 +26,7 @@ export default {
       alert("借りたぜ");
     },
   },
-};
+});
 </script>
 
 <style>
