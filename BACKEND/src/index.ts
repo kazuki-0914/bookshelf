@@ -32,3 +32,7 @@ const users: User[] = [
 app.get('/users', (req: express.Request, res: express.Response) => {
     res.send(JSON.stringify(users))
 })
+
+var apiRouter = require('./router/api')
+
+app.use('/api', apiRouter)
